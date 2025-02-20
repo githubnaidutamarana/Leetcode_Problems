@@ -22,13 +22,13 @@ import java.util.*;
 
 class Solution {
     public List<Integer> findWordsContaining(String[] words, char x) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> l = new ArrayList<>();
 
         for (int i = 0; i < words.length; i++) {
             if (words[i].indexOf(x) != -1) { 
-                list.add(i);
+                l.add(i);
             }
         }
-        return list;
+        return l;
     }
 }
